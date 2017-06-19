@@ -82,7 +82,11 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
 {
   if (_onMessage) {
-    _onMessage(@{@"name":message.name, @"body": message.body});
+    if ([message.body isKindOfClass:[NSString class]]) {
+      _onMessage(@{@"name":message.name, @"body": message.body});
+    } else {
+       _onMessage(@{@"name":message.name, @"body": @""});
+    }
   }
 }
 
