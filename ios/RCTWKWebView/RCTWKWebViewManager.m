@@ -7,7 +7,6 @@
 #import <React/UIView+React.h>
 
 #import <WebKit/WebKit.h>
-#import "CustomEventEmitter.h"
 
 @interface RCTWKWebViewManager () <RCTWKWebViewDelegate>
 
@@ -51,12 +50,7 @@ RCT_EXPORT_METHOD(goBack:(nonnull NSNumber *)reactTag)
     if (![view isKindOfClass:[RCTWKWebView class]]) {
       RCTLogError(@"Invalid view returned from registry, expecting RCTWKWebView, got: %@", view);
     } else {
-        if(view.canGoBack) {
-            [view goBack];
-        } else {
-            NSLog(@"Can't go back. Emitting event to leave web view ...");
-            [CustomEventEmitter emitEvent:@"leaveWebView" data:@{}];
-        }
+      [view goBack];
     }
   }];
 }
