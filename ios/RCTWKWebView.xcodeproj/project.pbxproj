@@ -12,6 +12,7 @@
 		097457AF1D2AF4E0000D9368 /* RCTWKWebView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 097457AC1D2A4595000D9368 /* RCTWKWebView.h */; };
 		097457B01D2AF4E0000D9368 /* RCTWKWebViewManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 097457A81D2A457C000D9368 /* RCTWKWebViewManager.h */; };
 		3E609CF61EAA815D00187C8C /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E609CF51EAA815D00187C8C /* WeakScriptMessageDelegate.m */; };
+		BA186DB01F547AC40014BA55 /* CustomEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA186DAF1F547AC40014BA55 /* CustomEventEmitter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		097457AD1D2A4595000D9368 /* RCTWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = RCTWKWebView.m; sourceTree = "<group>"; tabWidth = 2; };
 		3E609CF41EAA815D00187C8C /* WeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakScriptMessageDelegate.h; sourceTree = "<group>"; };
 		3E609CF51EAA815D00187C8C /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
+		BA186DAE1F547AC40014BA55 /* CustomEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEventEmitter.h; sourceTree = "<group>"; };
+		BA186DAF1F547AC40014BA55 /* CustomEventEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEventEmitter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 		0974579C1D2A440A000D9368 /* RCTWKWebView */ = {
 			isa = PBXGroup;
 			children = (
+				BA186DAE1F547AC40014BA55 /* CustomEventEmitter.h */,
+				BA186DAF1F547AC40014BA55 /* CustomEventEmitter.m */,
 				097457AC1D2A4595000D9368 /* RCTWKWebView.h */,
 				097457AD1D2A4595000D9368 /* RCTWKWebView.m */,
 				097457A81D2A457C000D9368 /* RCTWKWebViewManager.h */,
@@ -135,6 +140,7 @@
 			files = (
 				097457AB1D2A457C000D9368 /* RCTWKWebViewManager.m in Sources */,
 				3E609CF61EAA815D00187C8C /* WeakScriptMessageDelegate.m in Sources */,
+				BA186DB01F547AC40014BA55 /* CustomEventEmitter.m in Sources */,
 				097457AE1D2A4595000D9368 /* RCTWKWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
